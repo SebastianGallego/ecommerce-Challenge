@@ -1,0 +1,11 @@
+Su desafío es construir esta página de producto de comercio electrónico 
+y hacer que se parezca lo más posible al diseño.
+
+
+ Abra una galería de cajas de luz haciendo clic en la imagen grande del producto.
+ Cambie la imagen grande del producto haciendo clic en las imágenes en miniatura pequeñas
+ Añadir artículos al carrito
+ Ver el carrito y eliminar artículos del mismo.
+ Ver el diseño óptimo para el sitio según el tamaño de pantalla de su dispositivo
+ Ver estados de desplazamiento para todos los elementos interactivos en la página
+
