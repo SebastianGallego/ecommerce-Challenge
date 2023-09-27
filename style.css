@@ -1,8 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*  Reset   */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/*  Paleta de colores:  */
+
+:root {
+  --Verydarkblue: hsl(220, 13%, 13%);
+  --Orange: hsl(26, 100%, 55%);
+  --Paleorange: hsl(25, 100%, 94%);
+  --Darkgrayishblue: hsl(219, 9%, 45%);
+  --Grayishblue: hsl(220, 14%, 75%);
+  --Lightgrayishblue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Black-Modal: hsl(0, 0%, 0%, 0.5);
+  --Font: "Kumbh Sans", sans-serif;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.main-container {
+  width: 375px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+}
+
+.header-navigation {
+  width: 175px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu:hover {
+  cursor: pointer;
+}
+
+.header-cart {
+  position: relative;
+}
+
+.header-cart-notificacion {
+  width: 15px;
+  height: 12px;
+  border-radius: 16px;
+  background-color: var(--Orange);
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  font-size: 0.6rem;
+  text-align: center;
+  display: none;
+}
+
+.header-cart-notificacion:hover {
+  cursor: pointer;
+}
+
+.header-avatar {
+  width: 24px;
+}
+
+.header-avatar:hover {
+  cursor: pointer;
+  border: 2px solid var(--Orange);
+  border-radius: 50%;
+}
+
+.header-cart-avatar {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: none;
+}
+
+.modal-navbar-bg {
+  /*display: none;*/
+  background-color: var(--Black-Modal);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-navbar {
+  background-color: var(--White);
+  width: 250px;
+  padding: 28px 24px;
+  height: 100%;
+}
+
+.modal-navbar-items {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.modal-navbar-item {
+  text-decoration: none;
+  color: var(--Verydarkblue);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.modal-navbar-item:hover {
+  cursor: pointer;
+}
+
+.modal-navbar-closeIcon {
+  cursor: pointer;
+}
+
+/*  Media Query:  */
+@media (min-width: 1115px) {
+  .main-container {
+    width: 1115px;
+  }
+
+  .header {
+    height: 112px;
+    border-bottom: 1px solid var(--Grayishblue);
+  }
+
+  .header-navigation {
+    width: 590px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-cart-avatar {
+    width: 125px;
+  }
+
+  .header-avatar {
+    width: 48px;
+  }
+}
+
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
